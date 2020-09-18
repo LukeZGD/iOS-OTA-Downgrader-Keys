@@ -4,8 +4,10 @@
 This repo has:
 
 - Firmware keys provided for futurerestore to use
-- URLs for iOS 8.4.1, 6.1.3, and latest firmwares for devices with baseband
-- iBSS IV and Keys, and IPSW SHA1sum for iOS 8.4.1 and 6.1.3
+- URLs and IPSW SHA1sum of iOS 8.4.1, 6.1.3
+- URLs of latest firmwares for devices with baseband
+- iBSS and iBEC IV and Keys of iOS 8.4.1 and 6.1.3 (unused but can be useful)
+- Firmware bundles of OdysseusOTA/2 for custom IPSW creation
 
 Raw files here can be used like an API as well, here are some examples:
 
