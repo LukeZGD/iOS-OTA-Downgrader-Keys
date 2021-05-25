@@ -60,25 +60,7 @@ devices613=(iPhone4,1 iPad2,1 iPad2,2 iPad2,3)
 [[ $OSTYPE == "darwin"* ]] && platform='macos'
 
 function HWModelSet {
-    [ $ProductType == iPad2,1 ] && HWModel=k93
-    [ $ProductType == iPad2,2 ] && HWModel=k94
-    [ $ProductType == iPad2,3 ] && HWModel=k95
-    [ $ProductType == iPad2,4 ] && HWModel=k93a
-    [ $ProductType == iPad2,5 ] && HWModel=p105
-    [ $ProductType == iPad2,6 ] && HWModel=p106
-    [ $ProductType == iPad2,7 ] && HWModel=p107
-    [ $ProductType == iPad3,1 ] && HWModel=j1
-    [ $ProductType == iPad3,2 ] && HWModel=j2
-    [ $ProductType == iPad3,3 ] && HWModel=j2a
-    [ $ProductType == iPad3,4 ] && HWModel=p101
-    [ $ProductType == iPad3,5 ] && HWModel=p102
-    [ $ProductType == iPad3,6 ] && HWModel=p103
-    [ $ProductType == iPhone4,1 ] && HWModel=n94
-    [ $ProductType == iPhone5,1 ] && HWModel=n41
-    [ $ProductType == iPhone5,2 ] && HWModel=n42
-    [ $ProductType == iPhone5,3 ] && HWModel=n48
-    [ $ProductType == iPhone5,4 ] && HWModel=n49
-    [ $ProductType == iPod5,1 ] && HWModel=n78
+    HWModel=$(cat $ProductType/hwmodel)
 }
 
 # echo "iOS-OTA-Downgrader BuildManifest and Firmware Keys Saver"
